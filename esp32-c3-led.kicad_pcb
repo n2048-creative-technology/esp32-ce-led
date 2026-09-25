@@ -472,6 +472,7 @@
 		(property "Reference" "C5"
 			(at -2.8 -0.025 90)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "f014ee44-dd1f-4fbf-95aa-3d4c07fde0ab")
 			(effects
 				(font
@@ -1091,15 +1092,16 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+	(footprint "Capacitor_SMD:C_01005_0402Metric"
 		(layer "F.Cu")
 		(uuid "3ee6db65-394a-419e-8734-aad00d827f51")
 		(at 126.5 68.6625 90)
-		(descr "Capacitor SMD 01005 (0402 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: http://www.vishay.com/docs/20056/crcw01005e3.pdf), generated with kicad-footprint-generator")
-		(tags "capacitor handsolder")
+		(descr "Capacitor SMD 01005 (0402 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.vishay.com/docs/20056/crcw01005e3.pdf), generated with kicad-footprint-generator")
+		(tags "capacitor")
 		(property "Reference" "C1"
 			(at -2.3625 0 90)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "dd614da2-d65b-473a-ab84-a475c0d28184")
 			(effects
 				(font
@@ -1183,35 +1185,37 @@
 			)
 		)
 		(pad "" smd roundrect
-			(at -0.3625 0 90)
-			(size 0.41 0.27)
+			(at -0.275 0 90)
+			(size 0.27 0.27)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "836bbe69-6bd6-44a8-844e-a8013d2f5625")
 		)
 		(pad "" smd roundrect
-			(at 0.3625 0 90)
-			(size 0.41 0.27)
+			(at 0.275 0 90)
+			(size 0.27 0.27)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "105d4610-48ae-49ed-bfaf-71abb9dcff75")
 		)
 		(pad "1" smd roundrect
-			(at -0.3375 0 90)
-			(size 0.575 0.3)
+			(at -0.25 0 90)
+			(size 0.4 0.3)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
 			(net 23 "+5V")
 			(pintype "passive")
+			(clearance 0.05)
 			(uuid "544265b7-801b-4235-b9a2-99efe2eca587")
 		)
 		(pad "2" smd roundrect
-			(at 0.3375 0 90)
-			(size 0.575 0.3)
+			(at 0.25 0 90)
+			(size 0.4 0.3)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pintype "passive")
+			(clearance 0.05)
 			(uuid "f06993ae-059c-4f15-b64b-62c912d2b87a")
 		)
 		(embedded_fonts no)
@@ -2589,15 +2593,16 @@
 			)
 		)
 	)
-	(footprint "Capacitor_SMD:C_01005_0402Metric_Pad0.57x0.30mm_HandSolder"
+	(footprint "Capacitor_SMD:C_01005_0402Metric"
 		(layer "F.Cu")
 		(uuid "a4647160-8d31-49be-94ec-7246a1782f66")
 		(at 135 59.6875 90)
-		(descr "Capacitor SMD 01005 (0402 Metric), square (rectangular) end terminal, IPC-7351 nominal with elongated pad for handsoldering. (Body size source: http://www.vishay.com/docs/20056/crcw01005e3.pdf), generated with kicad-footprint-generator")
-		(tags "capacitor handsolder")
+		(descr "Capacitor SMD 01005 (0402 Metric), square (rectangular) end terminal, IPC-7351 nominal, (Body size source: http://www.vishay.com/docs/20056/crcw01005e3.pdf), generated with kicad-footprint-generator")
+		(tags "capacitor")
 		(property "Reference" "C6"
 			(at -1.8125 0 90)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "f838aae9-cdb5-413d-856e-ae285c7751f6")
 			(effects
 				(font
@@ -2681,35 +2686,37 @@
 			)
 		)
 		(pad "" smd roundrect
-			(at -0.3625 0 90)
-			(size 0.41 0.27)
+			(at -0.275 0 90)
+			(size 0.27 0.27)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "f39edaf9-d6e8-402d-9d68-d06677af4697")
 		)
 		(pad "" smd roundrect
-			(at 0.3625 0 90)
-			(size 0.41 0.27)
+			(at 0.275 0 90)
+			(size 0.27 0.27)
 			(layers "F.Paste")
 			(roundrect_rratio 0.25)
 			(uuid "3e424b58-b1dc-4b50-adb8-4447c16f1d2b")
 		)
 		(pad "1" smd roundrect
-			(at -0.3375 0 90)
-			(size 0.575 0.3)
+			(at -0.25 0 90)
+			(size 0.4 0.3)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
 			(net 22 "+3V3")
 			(pintype "passive")
+			(clearance 0.05)
 			(uuid "c8aff14c-9f26-4a46-9e0a-f7076c332a2c")
 		)
 		(pad "2" smd roundrect
-			(at 0.3375 0 90)
-			(size 0.575 0.3)
+			(at 0.25 0 90)
+			(size 0.4 0.3)
 			(layers "F.Cu" "F.Mask")
 			(roundrect_rratio 0.25)
 			(net 1 "GND")
 			(pintype "passive")
+			(clearance 0.05)
 			(uuid "adda6b3a-c81a-4dd0-9aeb-523238167cbc")
 		)
 		(embedded_fonts no)
@@ -2876,6 +2883,7 @@
 		(property "Reference" "R8"
 			(at 0.0975 -1.5 0)
 			(layer "F.SilkS")
+			(hide yes)
 			(uuid "40c19fe9-91cf-4da4-8ab1-f018f480472c")
 			(effects
 				(font
@@ -3160,6 +3168,7 @@
 		(property "Reference" "J1"
 			(at 0 2.38 90)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "41abfbc5-2610-44c4-89c3-29b79987e444")
 			(effects
 				(font
@@ -3402,6 +3411,7 @@
 			(at -6.68 3.425 0)
 			(unlocked yes)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "f1ff65a5-3bca-46f5-bce9-aafc6e564280")
 			(effects
 				(font
@@ -4402,6 +4412,7 @@
 		(property "Reference" "J2"
 			(at 0 2.38 90)
 			(layer "B.SilkS")
+			(hide yes)
 			(uuid "4831d007-193b-4317-b24e-faa43f36b5d4")
 			(effects
 				(font
