@@ -67,6 +67,16 @@ Board is set up for JLCPCB fabrication + assembly out of the box:
 - `esp32-c3-led.kicad_pro` / `.kicad_sch` / `.kicad_pcb` are the authoritative KiCad 9 source files
 - Every part carries `LCSC` and `MPN` custom fields on its schematic symbol for direct BOM upload to JLCPCB
 
+### Design Rule Check status
+
+Verified clean via `kicad-cli pcb drc`: only 2 benign warnings remain
+(`lib_footprint_mismatch` on C1/C6, confirming an intentional local pad
+clearance override on the 01005 100nF caps — their `_HandSolder`
+footprint variant was swapped for the standard machine-assembly
+footprint to meet the board's clearance rule). No copper clearance
+errors, no dangling/floating silkscreen text, no component placement
+changes.
+
 ## Repo Layout
 
 ```
