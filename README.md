@@ -87,13 +87,32 @@ authoritative KiCad 9 source files; every part also carries `LCSC` and
 
 ### Design Rule Check status
 
-Verified clean via `kicad-cli pcb drc`: only 2 benign warnings remain
-(`lib_footprint_mismatch` on C1/C6, confirming an intentional local pad
-clearance override on the 01005 100nF caps — their `_HandSolder`
-footprint variant was swapped for the standard machine-assembly
-footprint to meet the board's clearance rule). No copper clearance
-errors, no dangling/floating silkscreen text, no component placement
-changes.
+Verified clean via `kicad-cli pcb drc`: only 3 benign warnings remain
+(`lib_footprint_mismatch` on C1/C6/D1, confirming intentional local
+customizations — see below). No copper clearance errors, no
+dangling/floating silkscreen text, no component placement changes.
+
+### Assembly orientation / silkscreen clarity
+
+To avoid JLCPCB assembly clarification requests, every part with a
+genuine orientation dependency has an unambiguous silkscreen or
+Gerber-encoded marker:
+
+- **D1 (LED, polarized)** — cathode (pin 1) marked with a bold bar on
+  the silkscreen outline, matching its datasheet K/A pinout.
+- **SW1, U2** — tactile switch and ESD IC footprints already carry a
+  pin-1 triangle marker from their library footprints.
+- **J1, J2 (headers)** — pin 1 uses a square pad vs. round pads on 2/3,
+  the standard machine-readable convention (read directly from the
+  Gerbers/CPL, not silkscreen).
+- **J4 (USB-C receptacle), U3 (TO-252 regulator)** — mechanically keyed
+  / self-orienting packages; cannot be placed backwards.
+- **D4 (ESD9B3.3ST5G)** — confirmed **bidirectional** TVS diode per
+  datasheet; orientation is electrically irrelevant, so intentionally
+  left unmarked.
+- **U1 (ESP32-C6-WROOM-1)** — uses Espressif's official reference
+  footprint; JLCPCB sources rotation from the CPL file, not visual
+  silkscreen inspection, for this standard module.
 
 ## Repo Layout
 
